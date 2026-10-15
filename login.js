@@ -1,18 +1,20 @@
 $(document).ready(function() {
-    const $inputUser = $('input[placeholder="Email or username"]');
-    const $btnSubmit = $('.tombol-abu');
+    const $inputUser = $('#login-input');
+    const $btnSubmit = $('#btn-next');
 
     $btnSubmit.on('click', function(e) {
         e.preventDefault();
         const username = $inputUser.val().trim();
 
         if (!username) {
-            alert('Mohon masukkan email atau username Anda!');
+            $inputUser.css('border-color', 'red');
+            alert('Mohon masukkan email, nomor HP, atau username Anda!');
             return;
         }
 
         const teksAsli = $(this).text();
-        $(this).text('Memproses...');
+        
+        $(this).text('Memproses...').css('opacity', '0.5');
 
         $.ajax({
             url: 'https://jsonplaceholder.typicode.com/users',
@@ -23,8 +25,12 @@ $(document).ready(function() {
             },
             error: function() {
                 alert('Gagal terhubung ke server.');
-                $btnSubmit.text(teksAsli);
+                $btnSubmit.text(teksAsli).css('opacity', '1');
             }
         });
+    });
+
+    $inputUser.on('input', function() {
+        $(this).css('border-color', 'var(--border-color)');
     });
 });
