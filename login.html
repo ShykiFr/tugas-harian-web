@@ -1,60 +1,55 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>X - Login</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <div class="container">
+  <div class="login-container">
+    <!-- Left/Top Side: Logo -->
+    <aside class="login-hero">
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path>
+      </svg>
+    </aside>
 
-    <div class="kiri">
+    <!-- Right/Bottom Side: Form -->
+    <main class="login-content">
       <h1>Happening now.</h1>
-
-      <button class="tombol tombol-putih">Continue with phone</button>
-      <button class="tombol tombol-gelap">Continue with Google</button>
-      <button class="tombol tombol-gelap">Continue with Apple</button>
-
-      <p class="atau">— or —</p>
-
-      <input type="text" placeholder="Email or username">
-      <button class="tombol tombol-abu">Continue</button>
-
-      <p class="syarat">
-        By continuing, you agree to our
-        <a href="#">Terms of Service</a>,
-        <a href="#">Privacy Policy</a> and
-        <a href="#">Cookie Use.</a>
-      </p>
-    </div>
-
-    <div class="kanan">
-      <div class="logo">X</div>
-    </div>
-
+      
+      <div class="login-actions">
+        <button class="btn btn--primary">Continue with Google</button>
+        <button class="btn btn--primary">Continue with Apple</button>
+        
+        <div class="divider">
+          <span>or</span>
+        </div>
+        
+        <input type="text" class="form-input" placeholder="Phone, email, or username">
+        <button type="button" class="btn btn--outline" onclick="window.location.href='home.html'">Next</button>
+        <button class="btn btn--outline">Forgot password?</button>
+        
+        <p class="terms-text">
+          By continuing, you agree to our <a href="#">Terms of Service</a>, 
+          <a href="#">Privacy Policy</a> and <a href="#">Cookie Use</a>.
+        </p>
+      </div>
+    </main>
   </div>
 
-  <div class="kotak-qr">
-    <p>Scan to get the app</p>
-    <div class="qr">QR</div>
-  </div>
-
-  <div class="footer">
+  <footer class="login-footer">
     <a href="#">About</a>
-    <a href="#">Get App</a>
-    <a href="#">Grok</a>
-    <a href="#">Help</a>
-    <a href="#">Terms</a>
-    <a href="#">Privacy</a>
-    <a href="#">Cookies</a>
-    <a href="#">Careers</a>
-    <a href="#">Ads &amp; Business</a>
-    <a href="#">Developers</a>
-    <a href="#">News</a>
+    <a href="#">Help Center</a>
+    <a href="#">Terms of Service</a>
+    <a href="#">Privacy Policy</a>
+    <a href="#">Cookie Policy</a>
     <a href="#">Accessibility</a>
+    <a href="#">Ads info</a>
     <span>© 2026 X Corp.</span>
-  </div>
+  </footer>
 
 </body>
 </html>
