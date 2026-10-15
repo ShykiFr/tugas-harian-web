@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  display: flex;
+  min-height: 90vh;
+  align-items: center;
+}
+
+.kiri {
+  width: 50%;
+  padding-left: 150px;
+}
+
+h1 {
+  font-size: 64px;
+  margin-bottom: 50px;
+  width: 400px;
+}
+
+.tombol {
+  display: block;
+  width: 450px;
+  height: 55px;
+  border-radius: 30px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.tombol-putih {
+  background-color: white;
+  color: black;
+  border: none;
+}
+
+.tombol-gelap {
+  background-color: black;
+  color: white;
+  border: 1px solid gray;
+}
+
+.tombol-abu {
+  background-color: #444;
+  color: gray;
+  border: none;
+  margin-top: 20px;
+}
+
+.atau {
+  width: 450px;
+  text-align: center;
+  color: gray;
+  margin: 20px 0;
+}
+
+input {
+  width: 450px;
+  height: 70px;
+  padding: 10px;
+  font-size: 18px;
+  background-color: black;
+  color: white;
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+
+.syarat {
+  width: 450px;
+  text-align: center;
+  font-size: 14px;
+  color: gray;
+  margin-top: 30px;
+}
+
+.syarat a {
+  color: white;
+}
+
+.kanan {
+  width: 50%;
+  text-align: center;
+}
+
+.logo {
+  font-size: 500px;
+  font-weight: bold;
+  color: white;
+}
+
+.kotak-qr {
+  position: fixed;
+  right: 40px;
+  bottom: 60px;
+  width: 200px;
+  padding: 15px;
+  background-color: #16181c;
+  border: 1px solid gray;
+  border-radius: 15px;
+  text-align: center;
+  color: gray;
+}
+
+.qr {
+  width: 150px;
+  height: 150px;
+  background-color: white;
+  color: black;
+  margin: 10px auto 0;
+  line-height: 150px;
+  font-size: 30px;
+}
+
+.footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 13px;
+  color: gray;
+}
+
+.footer a {
+  color: gray;
+  text-decoration: none;
+  margin: 0 6px;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
